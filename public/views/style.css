@@ -1,0 +1,87 @@
+
+.presaleproducts-item>h4{
+margin-top: 5px;
+margin-bottom: 20px;
+text-align: center;
+display: inline-block;
+width:270px;
+}
+.nick-wrap{
+  border:2px solid #dadada;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 3px -3px #777;
+     -moz-box-shadow: 0 5px 3px -3px #777;
+          box-shadow: 0 5px 3px -3px #777;
+}
+.nick-wrap>h4{
+  text-align: center;
+  color: #ff6f69;
+}
+.nick-wrap p{
+  margin-left: 5px;
+  font-family: helvetica, sans-serif;
+  color:#4f5b66;
+}
+.set-nick{
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+.nickname{
+  width:200px;
+  height:28px;
+  border:1px solid #e2e2e4;
+  border-radius: 3px;
+}
+.chat{
+	height:320px;
+  margin-left: 5px;
+		}
+.content-wrap{
+	display: none;
+		}
+.chat-wrap{
+	border: 2px solid #dadada;
+  border-radius: 5px;
+  height:auto;
+		}
+.error{
+	color: red;
+		}
+.whisper{
+	color: gray;
+	font-style: italic;
+		}
+.msg-box{
+  width: 275px;
+  position: relative;
+  height: 33px;
+  resize: none;
+  margin-top: 5px;
+  margin-left: 3px;
+  margin-bottom: 3px;
+  outline: none;
+  border: 1px solid #ececec;
+  border-radius: 3px;
+  font-family: helvetica, sans-serif;
+  color: #000;
+  font-weight: 100;
+  font-size: 15px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  -moz-transition: all .2s linear;
+}
+.msg-box:focus{
+  border: 1px solid #dadada;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.submit-btn{
+
+  margin-bottom:3px;
+  margin-right: 3px;
+}
+.msg{
+  font-size: 16px;
+  font-family: helvetica,sans-serif;
+}
+

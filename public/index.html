@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html  ng-app>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Presale Survey</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="/views/style.css">
+<link rel="stylesheet" href="/js/slick/slick.css">
+<link rel="stylesheet" href="/js/slick/slick-theme.css">
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+<div class="container">
+<div class="row">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">ZakkaHouse</a>
+</div>
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li class="active"><a href="#">New arrival<span class="sr-only">(current)</span></a></li>
+<li><a href="#">Products</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shop FOR Her/Him<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="#">Gift for Her</a></li>
+<li><a href="#">Gift for Him</a></li>
+<li><a href="#">Gift for Child</a></li>
+<li class="divider"></li>
+<li><a href="#">Separated link</a></li>
+<li class="divider"></li>
+<li><a href="#">One more separated link</a></li>
+</ul>
+</li>
+</ul>
+<form class="navbar-form navbar-left" role="search">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Search Products">
+</div>
+<button type="submit" class="btn btn-default">Search</button>
+</form>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#">Sign In</a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+<section>
+<div class="container">
+<h2 class="presalesurvey">Presale Products Survey</h2>
+<div class="row">
+
+<div class="col-md-4 col-sm-4">
+<div class="presaleproducts-item">
+  <div class="single-item">
+  <div><img class="thumbnail" width=100% src="/views/img/tea_for_one_set/1.png" alt="Presale_products" ></div>
+  <div><img class="thumbnail" width=100% src="/views/img/tea_for_one_set/2.png" alt="Presale_products" ></div>
+  <div><img class="thumbnail" width=100% src="/views/img/tea_for_one_set/3.png" alt="Presale_products" ></div>
+  <div><img class="thumbnail" width=100% src="/views/img/tea_for_one_set/4.png" alt="Presale_products" ></div>
+</div>
+
+<h4>Product A: Tea For One Set</h4>  
+<button class="btn-sm btn-danger" ng-click="countofa=countofa+1" >{{countofa}} <span class="glyphicon glyphicon-heart" aria-hidden="true"></span></button>
+<p>This Tea for One, complete with an extra-fine 0.3 mm stainless-steel tea infuser built-in teapot and cup, is designed for simple and clean way of making your own cup of tea. The extra-fine tea infuser gives you a perfect even steep every time, and enables you to steep fine loose-leaf teas such as Rooibos tea to large whole-leaf teas like Oolong tea. With the Café Style tea for One, steeping your favorite cup is now easier and more pleasurable than ever. Dishwasher safe.</p>
+
+</div>
+</div>
+
+<div class="col-md-4 col-sm-4">
+<div class="nick-wrap">
+<h4>Real-time Comments</h4>
+<p>Enter your username:</p>
+<p class="nickerror"></p>
+<form class="set-nick form-horizontal">
+<input class="nickname" type="text" class="form-control" id="inputDefault"></input>
+<button class="btn-sm btn-info" type="submit">Submit</button>
+</form>
+</div>
+<div class="content-wrap">
+<div class="chat-wrap">
+<div class="chat"></div>
+<form class="send-message form-horizontal">
+<input class="msg-box" class="form-control" id="focusedInput" type="text"></input>
+<button class="btn btn-info submit-btn" type="submit">Submit</button> 
+</form>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-4">
+<div class="presaleproducts-item">
+  <div class="single-item">
+  <div><img width=100% class="thumbnail" src="/views/img/bell_glass_teapot/1.png" alt="Presale_products" ></div>
+  <div><img width=100% class="thumbnail" src="/views/img/bell_glass_teapot/2.png" alt="Presale_products" ></div>
+  <div><img width=100% class="thumbnail" src="/views/img/bell_glass_teapot/3.png" alt="Presale_products" ></div>
+  <div><img width=100% class="thumbnail" src="/views/img/bell_glass_teapot/4.png" alt="Presale_products" ></div>
+</div>
+<h4>Product B: Bell Glass Teapot</h4>
+<button class="btn-sm btn-danger" ng-click="countofb=countofb+1" >{{countofb}} <span class="glyphicon glyphicon-heart" aria-hidden="true"></span></button>
+
+<p>The stylish bell-shaped glass teapot, complete with the Basket Infuser with handle and the Push-on-Lid, allows you to remove the infuser at the optimal time. Enjoy the calming dance of aroma and color through this crystal clear pot. Cleaning is hassle free with the innovative detachable lid. </p>
+
+</div>
+</div>
+</section>
+
+
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+</body>
+
+<footer></footer>
+</html>
+
